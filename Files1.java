@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Files1 {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException{
         File file = new File("/Users/adrianplewa/Desktop/trainingFiles/captmidn.txt");
 
         int nrLine = 1;
@@ -17,8 +17,9 @@ public class Files1 {
                 nrLine++;
             }
             }catch (FileNotFoundException e){
-                System.out.println("file error");
-            }
+         throw new FileNotFoundException("file error");
+         //committest
+        }
         }
     }
 
