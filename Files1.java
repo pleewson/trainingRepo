@@ -18,7 +18,7 @@ public class Files1 {
             }
             }catch (FileNotFoundException e){
          throw new FileNotFoundException("file error");
-         //oppo
+         //ful;day
         }
         }
     }
