@@ -1,24 +1,24 @@
-import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Files1 {
-    public static void main(String[] args) throws FileNotFoundException{
-        File file = new File("/Users/adrianplewa/Desktop/trainingFiles/captmidn.txt");
+    public static void main(String[] args) throws FileNotFoundException {
 
-        int nrLine = 1;
 
-        try{
-            Scanner scan = new Scanner(file);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter text:");
 
-            while(scan.hasNextLine()) {
-                String Line = scan.nextLine();
-                System.out.println("Line " + nrLine + ": " + Line);
-                nrLine++;
+        try (PrintWriter printer = new PrintWriter("/Users/adrianplewa/Desktop/trainingFiles/text1.txt")) {
+            while (scan.hasNext()) {
+                String text = scan.nextLine();
+                if (text.contains("quit")) {
+                    break;
+                }
+                printer.println(text + " ");
             }
-            }catch (FileNotFoundException e){
-         throw new FileNotFoundException("file error");
-//discoboy        }
+
+
         }
     }
-
+}
