@@ -17,8 +17,8 @@ public class Files1 {
                 }
                 printer.println(text + " ");
             }
-
-
+        }catch (FileNotFoundException ex){
+            System.out.println("file error!!");
         }
     }
 }
