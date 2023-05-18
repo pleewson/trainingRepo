@@ -18,7 +18,7 @@ public class Files2 {
         }catch (FileNotFoundException ex){
             System.out.println("fileerror!!!");
         }
-
+//invstn
 
     }
 }
