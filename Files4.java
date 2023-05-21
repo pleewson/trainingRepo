@@ -20,6 +20,7 @@ public class Files4 {
 
         }catch (FileNotFoundException ex){
             System.out.println("file error404!@#");
+            //test
         }
     }
 }
