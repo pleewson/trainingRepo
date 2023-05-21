@@ -7,7 +7,7 @@ public class Files4 {
     public static void main(String[] args){
 
         File file = new File("/Users/adrianplewa/Desktop/trainingFiles/javaTraining4.txt");
-
+//okey lets go
         try{
             Scanner scan = new Scanner(file);
             while(scan.hasNextLine()){
@@ -20,6 +20,7 @@ public class Files4 {
 
         }catch (FileNotFoundException ex){
             System.out.println("file error404!@#");
+
         }
     }
 }
