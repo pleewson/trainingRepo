@@ -14,7 +14,7 @@ public class Files4 {
                 String line = scan.nextLine();
                 if(line.toLowerCase(Locale.ROOT).contains("java")){
                     System.out.println(line);
-
+//gogo
                 }
             }
 
