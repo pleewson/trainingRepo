@@ -21,4 +21,12 @@ public class Files1 {
             System.out.println("file error!!");
         }
     }
+
+
+
+    public static void writeToFile(String fileName){
+
+
+        
+    }
 }
