@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class HMFiles {
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
 
     //   System.out.println(count("/Users/adrianplewa/Desktop/trainingFiles/numbers.txt"));
 
@@ -17,6 +17,15 @@ public class HMFiles {
          // System.out.println(checkFileExist());
 
         rewrite();
+
+      /*try (PrintWriter prr = new PrintWriter("/Users/adrianplewa/Desktop/trainingFiles/testertsetstesrtset.txt")){
+          prr.println("szegz");
+      }catch (IOException e){
+          System.out.println("eror");
+      }
+
+       */
+
     }
 
     //task1
@@ -93,7 +102,7 @@ public class HMFiles {
 
 
         if (Files.exists(path)) {
-            try (PrintWriter writer = new PrintWriter("/Users/adrianplewa/Desktop/trainingFiles" +fileName + "_2.txt")) {
+            try (PrintWriter writer = new PrintWriter("/Users/adrianplewa/Desktop/trainingFiles/" +fileName + "_2.txt")) {
                 Scanner scanRead = new Scanner(file);
                 while (scanRead.hasNextLine()) {
                     String line = scanRead.nextLine();
@@ -103,7 +112,7 @@ public class HMFiles {
 
                 System.out.println("Created new file _2");
 
-        }catch(FileNotFoundException ex){
+        }catch(IOException ex){
             System.out.println("problems with file");
             }
         }else{
