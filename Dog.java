@@ -1,6 +1,5 @@
 public class Dog {
-    Dog dog = new Dog();
-
-    String dogName = dog.imi();
+    Dog dogy = new Dog();
+    String breedDog = dogy.m;
 
 }
