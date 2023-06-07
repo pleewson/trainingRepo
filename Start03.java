@@ -8,5 +8,6 @@ public class Start03 {
         System.out.println(person.age);
         System.out.println(person.gender);
 
+        this.wait();
     }
 }
