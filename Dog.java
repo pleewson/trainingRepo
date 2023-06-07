@@ -1,5 +1,7 @@
+
 public class Dog {
-    Dog dogy = new Dog();
-    String breedDog = dogy.m;
+    public static void main(String[] args) {
+
+    }
 
 }
