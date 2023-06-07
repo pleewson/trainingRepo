@@ -1,15 +1,19 @@
 public class Start01 {
+    public static void main(String[] args) {
 
 
-    Cat cat = new Cat();
+        Dog dog = new Dog();
+        Cat cat = new Cat();
+
+AccessModifier am = new AccessModifier();
 
 
-    Dog dog = new Dog();
-    String breedDog = dog;
 
-
-    dog.breed = "pug";
-
+        }
     }
 
-}
+
+
+
+
+
