@@ -8,5 +8,17 @@ public class Start03 {
         System.out.println(person.age);
         System.out.println(person.gender);
 
+
+        System.out.println();
+
+
+
+        Car newBeetle = new Car();
+
+        newBeetle.setBrand("Volkswagen");
+        newBeetle.setModel("New Beetle");
+        newBeetle.setPrice(10000);
+
+        System.out.println(newBeetle);
     }
 }
