@@ -20,5 +20,11 @@ public class Start03 {
         newBeetle.setPrice(10000);
 
         System.out.println(newBeetle);
+
+
+
+        Author Tolkien = new Author(942, "John", "Tolkien", "J.R.R. Tolkien");
+
+        System.out.println(Tolkien.toString());
     }
 }
