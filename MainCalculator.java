@@ -11,7 +11,7 @@ public class MainCalculator {
             System.out.println("cant div by 0.");
         }
 
-        
+
         c.add(9,4);
         c.subtract(10,5);
         c.division(100, c.multiply(5,5));
