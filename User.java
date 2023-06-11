@@ -20,6 +20,7 @@ public class User {
     public void addBook(Book book){
         this.userLibrary = Arrays.copyOf(this.userLibrary, this.userLibrary.length+1);
         this.userLibrary[-1] = book.toString();
+        //test
 
     }
 }
