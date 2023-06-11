@@ -52,8 +52,7 @@ public class Book {
         this.additionalAuthors = additionalAuthors;
     }
 
-
-    //getters
+    
     public int getId(){
         return id;
     }
