@@ -4,7 +4,7 @@ public class Book {
     private String title;
     private boolean avilable = true;
     private Author author;
-    private String[] additionalAuthors;
+    private Author[] additionalAuthors;
 
 
 
@@ -22,7 +22,7 @@ public class Book {
     }
 
 
-    Book(int id, String title, Author author, String[] additionalAuthors){
+    Book(int id, String title, Author author, Author[] additionalAuthors){
         this.id = id;
         this.title = title;
         this.author = author;
@@ -48,7 +48,7 @@ public class Book {
         this.author = author;
     }
 
-    public void setAdditionalAuthors(String[] additionalAuthors){
+    public void setAdditionalAuthors(Author[] additionalAuthors){
         this.additionalAuthors = additionalAuthors;
     }
 
@@ -70,7 +70,7 @@ public class Book {
         return author;
     }
 
-    public String[] getAdditionalAuthors(){
+    public Author[] getAdditionalAuthors(){
         return additionalAuthors;
     }
 }
