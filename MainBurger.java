@@ -3,6 +3,5 @@ public class MainBurger {
 
         Burger cheeseBurger = new Burger("Medium",6.99);
         System.out.println(cheeseBurger);
-
     }
 }

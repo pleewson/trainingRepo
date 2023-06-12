@@ -41,7 +41,7 @@ public class Calculator {
 
 
 
-    private void addToHistory(String text){
+    protected void addToHistory(String text){
         this.history = Arrays.copyOf(this.history,this.history.length+1);
         this.history[this.history.length-1] = text;
     }
