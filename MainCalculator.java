@@ -14,11 +14,25 @@ public class MainCalculator {
 
         c.add(9,4);
         c.subtract(10,5);
-        c.division(100, c.multiply(5,5));
+        c.division(100, 5);
 
         c.printOperations();
-        c.clearOperations();
-        c.printOperations();
+       // c.clearOperations();
+        //c.printOperations();
+
+
+        System.out.println("-----------");
+
+        AdvancedCalculator ac = new AdvancedCalculator();
+
+        ac.clearOperations();
+
+        ac.pow(5,3);
+        ac.root(64,3);
+
+        ac.printOperations();
+
+
 
 
 
