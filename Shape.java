@@ -1,8 +1,8 @@
 public class Shape {
 
-    private double x;
-    private double y;
-    private String color;
+    protected double x;
+    protected double y;
+    protected String color;
 
     Shape(double x, double y, String color){
         this.x = x;
@@ -10,14 +10,15 @@ public class Shape {
         this.color = color;
     }
 
-    String getDescription(double x, double y, String color){
+   protected String getDescription(){
         return "x-" + x + " y-" + y + " color - " + color;
     }
 
-    public double getDistance(Shape shape){
+    double getDistance(Shape shape){
         double distanceX = shape.x - this.x;
         double distanceY = shape.y - this.y;
 
         return Math.sqrt(distanceX * distanceX + distanceY * distanceY);
     }
+
 }
