@@ -30,5 +30,14 @@ public class StarterPack {
 
         System.out.println(emp1.getWage());
 
+
+
+
+        HourlyEmployee hEmp = new HourlyEmployee(2,"Jacek","Czczicz", 12.30);
+        System.out.println(hEmp.calculatePayment(160));
+
+        SalariedEmployee sEmp = new SalariedEmployee(3, "Dominos", "Pitccan", 21);
+        sEmp.calculatePayment();
+
     }
 }
