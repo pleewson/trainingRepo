@@ -38,7 +38,7 @@ public class StarterPack {
 
         SalariedEmployee sEmp = new SalariedEmployee(3, "Dominos", "Pitccan", 21);
         sEmp.calculatePayment();
-        //diablo
+        //diablo/holidays
 
     }
 }
