@@ -38,6 +38,11 @@ public class StarterPack {
 
         SalariedEmployee sEmp = new SalariedEmployee(3, "Dominos", "Pitccan", 21);
         sEmp.calculatePayment();
-        //transports
+
+
+        AdvancedCalculator adv = new AdvancedCalculator();
+        adv.root(25,2);
+        adv.printOperations();
+
     }
 }
