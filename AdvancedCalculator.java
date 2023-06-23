@@ -39,6 +39,7 @@ public class AdvancedCalculator extends Calculator {
 
 
    /* static void printGlobalOperations(){
+   //s
     }
     */
 
