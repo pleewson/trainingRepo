@@ -48,9 +48,10 @@ public class StarterPack {
 
         AdvancedCalculator adv = new AdvancedCalculator();
         adv.root(25,2);
-        adv.computeCircleArea(7);
         adv.add(4,4);
-        adv.pow(5,3);
+        adv.subtract(5,4);
+
+
         adv.printGlobalOperations();
 
     }

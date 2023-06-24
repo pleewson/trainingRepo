@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Calculator {
 
-   private String[] history = new String[0];
+   protected String[] history = new String[0];
 
 
     double add(double num1, double num2) {
