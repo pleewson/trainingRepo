@@ -7,6 +7,7 @@ public class AdvancedCalculator extends Calculator {
 
                 //computes//
    static final double PI = 3.14159265;
+
     double pow(double num1, double num2){
         double result = Math.pow(num1,num2);
         addToHistory(num1 + " ^ " + num2 + " equals " + result);
@@ -25,7 +26,6 @@ public class AdvancedCalculator extends Calculator {
     //this method will not add computes to history because its static method
     static double computeCircleArea(double r){
         double result = PI * Math.pow(r,2);
-       addToAdvancedHistory("2 * PI * " + r + "^2 = " + result);
         return result;
     }
 
@@ -36,9 +36,9 @@ public class AdvancedCalculator extends Calculator {
 
 
     public void printGlobalOperations(){
-        printOperations();
-        for (String s : globalHistory) {
-            System.out.println(s);
+       // printOperations();
+        for(int i = 0; i < globalHistory.length; i++){
+            System.out.println(globalHistory[i]);
         }
     }
 
@@ -56,6 +56,11 @@ public class AdvancedCalculator extends Calculator {
         globalHistory[globalHistory.length-1] = text;
     }
 
+    protected void addToHistory(String text){
+        super.addToHistory(text);
+        addToAdvancedHistory(text);
+
+    }
 
 
 
