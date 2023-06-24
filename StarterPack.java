@@ -40,9 +40,18 @@ public class StarterPack {
         sEmp.calculatePayment();
 
 
+
+        System.out.println();
+        System.out.println("----------------");
+
+
+
         AdvancedCalculator adv = new AdvancedCalculator();
         adv.root(25,2);
-        adv.printOperations();
+        adv.computeCircleArea(7);
+        adv.add(4,4);
+        adv.pow(5,3);
+        adv.printGlobalOperations();
 
     }
 }
