@@ -56,6 +56,8 @@ public class Calculator {
     public void clearOperations(){
         this.history = Arrays.copyOf(this.history,0);
     }
+
+    //check
 }
 
 
