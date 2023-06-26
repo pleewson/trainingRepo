@@ -62,9 +62,9 @@ public class StarterPack {
         //------------------------------//
         System.out.println("ShopProduct:");
 
-        ShopProduct milk = new ShopProduct("Milk 1,5%", 1.09);
-        ShopProduct bread = new ShopProduct("Bread", 2.19);
-        ShopProduct frozenPizza = new ShopProduct("Frozen Pizza", 3.99);
+        Product milk = new Product("Milk 1,5%", 1.09);
+        Product bread = new Product("Bread", 2.19);
+        Product frozenPizza = new Product("Frozen Pizza", 3.99);
 
         System.out.println(milk.getPrice());
         System.out.println("milk" + milk.getId());
