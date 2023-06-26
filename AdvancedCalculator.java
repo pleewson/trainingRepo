@@ -6,6 +6,9 @@ public class AdvancedCalculator extends Calculator {
 
 
                 //computes//
+    //pow
+    //root
+    //computeCircleArea
    static final double PI = 3.14159265;
 
     double pow(double num1, double num2){
@@ -34,31 +37,41 @@ public class AdvancedCalculator extends Calculator {
 
 
 
+    //opterations//
+
 
     public void printGlobalOperations(){
-       // printOperations();
         for(int i = 0; i < globalHistory.length; i++){
             System.out.println(globalHistory[i]);
         }
     }
 
 
-    //-----------------------HERE
+    //----------------------overloaded method
     public void printGlobalOperations(int length){
         for (int i = 0; i < length; i++){
             System.out.println(globalHistory[i]);
         }
     }
 
+    //----------------------overloaded method
+    public void printGlobalOperations(String length){
+        for(int i = 0; i < Integer.parseInt(length); i++){
+            System.out.println(globalHistory[i]);
+        }
+    }
 
-    static void addToAdvancedHistory(String text){
-        globalHistory = Arrays.copyOf(globalHistory,+1);
+
+
+
+    static void addToGlobaldHistory(String text){
+        globalHistory = Arrays.copyOf(globalHistory,globalHistory.length+1);
         globalHistory[globalHistory.length-1] = text;
     }
 
     protected void addToHistory(String text){
         super.addToHistory(text);
-        addToAdvancedHistory(text);
+        addToGlobaldHistory(text);
 
     }
 
