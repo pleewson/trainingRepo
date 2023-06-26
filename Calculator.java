@@ -2,8 +2,14 @@ import java.util.Arrays;
 
 public class Calculator {
 
-   protected String[] history = new String[0];
+   private String[] history = new String[0];
 
+
+     //computes//
+    //add
+    //multiply
+    //division
+    //subtract
 
     double add(double num1, double num2) {
         double result = num1 + num2;
@@ -41,6 +47,7 @@ public class Calculator {
 
 
 
+     //opterations//
     protected void addToHistory(String text){
         this.history = Arrays.copyOf(this.history,this.history.length+1);
         this.history[this.history.length-1] = text;
@@ -57,7 +64,6 @@ public class Calculator {
         this.history = Arrays.copyOf(this.history,0);
     }
 
-    //check
 }
 
 

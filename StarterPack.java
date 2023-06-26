@@ -46,13 +46,30 @@ public class StarterPack {
 
 
 
+        String test = "3";
+
         AdvancedCalculator adv = new AdvancedCalculator();
         adv.root(25,2);
         adv.add(4,4);
         adv.subtract(5,4);
+        adv.subtract(10,3);
 
 
         adv.printGlobalOperations();
+
+
+        System.out.println();
+        //------------------------------//
+        System.out.println("ShopProduct:");
+
+        ShopProduct milk = new ShopProduct("Milk 1,5%", 1.09);
+        ShopProduct bread = new ShopProduct("Bread", 2.19);
+        ShopProduct frozenPizza = new ShopProduct("Frozen Pizza", 3.99);
+
+        System.out.println(milk.getPrice());
+        System.out.println("milk" + milk.getId());
+        System.out.println("bread" + bread.getId());
+        System.out.println("pizz" + frozenPizza.getId());
 
     }
 }
