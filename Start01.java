@@ -9,7 +9,7 @@ public class Start01 {
 
 
 
-        Product water = new Product();
+        Produkkt water = new Produkkt();
 
         water.setName("Alasia");
 
