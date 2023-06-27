@@ -67,21 +67,29 @@ public class StarterPack {
         Product milk = new Product("Milk 1,5%", 1.09);
         Product bread = new Product("Bread", 2.19);
         Product frozenPizza = new Product("Frozen Pizza", 3.99);
+        Product chocolate = new Product("Chocolate", 1.00);
 
         System.out.println(milk.getPrice());
         System.out.println("milk" + milk.getId());
         System.out.println("bread" + bread.getId());
-        System.out.println("pizz" + frozenPizza.getId());
+        System.out.println("pizza" + frozenPizza.getId());
 
 
         System.out.println();
         System.out.println("ShoppingCart");
         ShoppingCart cart1 = new ShoppingCart();
 
-        cart1.addProduct(milk,3);
+        cart1.addProduct(milk,2);
+        cart1.addProduct(chocolate, 20);
+        cart1.addProduct(frozenPizza, 3);
+        cart1.addProduct(chocolate,3);
+        cart1.addProduct(chocolate,3);
 
         System.out.println();
         cart1.printReceipt();
+
+
+        cart1.abc();
     }
 
 

@@ -1,7 +1,7 @@
 public class CartItems {
 
-    private Product product;
-    private int quantity;
+    protected Product product;
+    protected int quantity;
 
 
     CartItems(Product product, int quantity){
