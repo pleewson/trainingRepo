@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StarterPack {
     public static void main(String[] args) {
 
@@ -71,5 +73,17 @@ public class StarterPack {
         System.out.println("bread" + bread.getId());
         System.out.println("pizz" + frozenPizza.getId());
 
+
+        System.out.println();
+        System.out.println("ShoppingCart");
+        ShoppingCart cart1 = new ShoppingCart();
+
+        cart1.addProduct(milk,3);
+
+        System.out.println();
+        cart1.printReceipt();
     }
+
+
+
 }
