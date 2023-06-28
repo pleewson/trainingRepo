@@ -14,22 +14,18 @@ public class ShoppingCart {
 
     //zwieksza ilosc
     public void addProduct(Product product, int quantity) {
-        increaseArray();
 
-// if (cartItems[i].getProduct().getName().equals(product)) {
-//            cartItems[i].setQuantity(cartItems[i].getQuantity() + quantity);
-//        }
-
-    for (int i = 0; i < cartItems.length; i++) {
-        if(cartItems[i] != null && cartItems[i].getProduct().equals(product)){
-            cartItems[i].setQuantity(cartItems[i].getQuantity() + quantity);
-        }else{
-            //think here
+        for (int i = 0; i < cartItems.length; i++) {
+            if (cartItems[i].getProduct().equals(product)) {
+                cartItems[i].setQuantity(cartItems[i].getQuantity() + quantity);
+                return;
+            }
         }
-}
 
-        CartItems newItem = new CartItems(product,quantity);
-        cartItems[cartItems.length-1] = newItem;
+            increaseArray();
+            CartItems newItem = new CartItems(product, quantity);
+            cartItems[cartItems.length - 1] = newItem;
+
 
     }
 
