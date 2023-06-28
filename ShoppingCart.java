@@ -29,7 +29,7 @@ public class ShoppingCart {
 
     }
 
-    //usuwa produkt
+    //usuwa produkt // Not working. yet.
     public void removeProduct(Product product){
         for(int i = 0; i < cartItems.length; i++){
             if(cartItems[i].getProduct().equals(product)){
@@ -43,7 +43,7 @@ public class ShoppingCart {
     public void updateProduct(Product product, int quantity){
         for(int i = 0; i < cartItems.length; i++){
             if (cartItems[i].getProduct().equals(product)){
-                cartItems[i].setQuantity(cartItems[i].getQuantity() + quantity);
+                cartItems[i].setQuantity(quantity);
             }
         }
     }
