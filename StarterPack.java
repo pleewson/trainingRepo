@@ -85,6 +85,8 @@ public class StarterPack {
         cart1.addProduct(chocolate,3);
         cart1.addProduct(chocolate,3);
 
+        cart1.updateProduct(chocolate, 15);
+
         System.out.println();
         cart1.printReceipt();
 
