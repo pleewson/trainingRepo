@@ -87,12 +87,13 @@ public class StarterPack {
 
         cart1.updateProduct(chocolate, 15);
 
+        cart1.removeProduct(chocolate);
+
         System.out.println();
         cart1.printReceipt();
 
 
 
-       // cart1.abc();
     }
 
 

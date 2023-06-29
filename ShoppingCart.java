@@ -6,11 +6,6 @@ public class ShoppingCart {
 
     CartItems newItem;
 
-    public void abc(){
-        for(int i = 0; i < cartItems.length; i++){
-            System.out.println(cartItems[i].getProduct().getName());
-        }
-    }
 
     //zwieksza ilosc
     public void addProduct(Product product, int quantity) {
@@ -29,11 +24,11 @@ public class ShoppingCart {
 
     }
 
-    //usuwa produkt // Not working. yet.
+    //usuwa produkt
     public void removeProduct(Product product){
         for(int i = 0; i < cartItems.length; i++){
             if(cartItems[i].getProduct().equals(product)){
-                cartItems[i] = null;
+                cartItems[i].setQuantity(0);
             }
         }
     }
@@ -75,10 +70,14 @@ public class ShoppingCart {
     //drukuje paragon
     int count = 1;
     public void printReceipt (){
-        for(int i = 0; i < cartItems.length; i++){
-            System.out.println(count + ": " + cartItems[i].getProduct().getName() + " ID:" + cartItems[i].getProduct().getId() + "  "
-                    + cartItems[i].getQuantity() + "x" + cartItems[i].getProduct().getPrice() + " = " +  (cartItems[i].getQuantity() * cartItems[i].getProduct().getPrice()));
-            count++;
+        for(int i = 0; i < cartItems.length; i++) {
+            if (cartItems[i].getQuantity() == 0) {
+
+            } else {
+                System.out.println(count + ": " + cartItems[i].getProduct().getName() + " ID:" + cartItems[i].getProduct().getId() + "  "
+                        + cartItems[i].getQuantity() + "x" + cartItems[i].getProduct().getPrice() + " = " + (cartItems[i].getQuantity() * cartItems[i].getProduct().getPrice()));
+                count++;
+            }
         }
     }
 
@@ -91,9 +90,3 @@ public class ShoppingCart {
 
 }
 
-
-
-
-//  if(items.getProduct().equals(product)){
-//              items.setQuantity(items.getQuantity() + quantity);
-//          }
