@@ -56,10 +56,10 @@ public class ShoppingCart {
 
 
     //getter// laczna wartosc produktow
-    public int getTotalSum(){
-        int totalSum = 0;
+    public double getTotalSum(){
+        double totalSum = 0;
         for(int i = 0; i < cartItems.length; i++){
-          totalSum += cartItems[i].getProduct().getPrice();
+          totalSum += cartItems[i].getProduct().getPrice() * cartItems[i].getQuantity();
         }
 
         return totalSum;
@@ -79,6 +79,9 @@ public class ShoppingCart {
                 count++;
             }
         }
+
+        System.out.println();
+        System.out.println("Total: " + getTotalSum());
     }
 
 
