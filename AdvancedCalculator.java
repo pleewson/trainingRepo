@@ -2,6 +2,9 @@ import java.util.Arrays;
 
 public class AdvancedCalculator extends Calculator {
 
+    public AdvancedCalculator(){
+        System.out.println("advCalc");
+    }
    private static String [] globalHistory = new String[0];
 
 
