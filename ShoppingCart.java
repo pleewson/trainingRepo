@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class ShoppingCart {
 
+
     public CartItems[] cartItems = new CartItems[0];
 
     CartItems newItem;
