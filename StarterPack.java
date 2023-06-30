@@ -92,7 +92,8 @@ public class StarterPack {
         System.out.println();
         cart1.printReceipt();
 
-        
+        //static t
+
     }
 
 
