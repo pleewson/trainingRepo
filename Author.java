@@ -12,6 +12,10 @@ public class Author {
         this.pseudonym = pseudonym;
     }
 
+    public String getFirstName(){return firstName; }
+
+    public String getLastName(){return lastName; }
+
    public String toString(){
         return "id "+ id + " " + firstName + " " + lastName + " " + pseudonym;
     }
