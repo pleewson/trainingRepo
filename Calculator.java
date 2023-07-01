@@ -1,17 +1,7 @@
 import java.util.Arrays;
 
 public class Calculator {
-
-    public int kao (int a){
-        return a;
-    }
-
-    public int kao (double abba){
-        int kao = (int) abba;
-        return kao;
-    }
-
-
+    
    private String[] history = new String[0];
 
 
