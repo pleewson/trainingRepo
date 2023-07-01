@@ -2,6 +2,15 @@ import java.util.Arrays;
 
 public class Calculator {
 
+    public int kao (int a){
+        return a;
+    }
+
+  /*  public int kao (double a){
+        return double = (double); -rzutowanie ogarnije
+    }
+
+   */
    private String[] history = new String[0];
 
 
