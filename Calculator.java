@@ -6,11 +6,12 @@ public class Calculator {
         return a;
     }
 
-  /*  public int kao (double a){
-        return double = (double); -rzutowanie ogarnije
+    public int kao (double abba){
+        int kao = (int) abba;
+        return kao;
     }
 
-   */
+
    private String[] history = new String[0];
 
 

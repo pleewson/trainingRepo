@@ -41,5 +41,13 @@ public class HomeworkStarter {
         kamil.returnAllBooks();
         kamil.addBook(sbHarryPotter1);
         kamil.printBorrowedBooks();
+
+
+        System.out.println();
+        double valueOfDouble = 2d;
+
+        int valueOfInt = (int) 2;
+
+        System.out.println(valueOfInt);
     }
 }
