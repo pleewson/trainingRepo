@@ -55,6 +55,10 @@ public class Book {
         this.additionalAuthors = additionalAuthors;
     }
 
+    public String toString(){
+        return "id: " + this.id + "  Title: " + this.title + "  Author: " + getAuthor().getFirstName() + " " + getAuthor().getLastName();
+    }
+
 
     //getters
 
@@ -86,6 +90,7 @@ public class Book {
 
     public void borrowBook(){
         popularity++;
+
     }
 
     public boolean equals(Book book){

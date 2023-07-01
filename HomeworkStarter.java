@@ -25,5 +25,21 @@ public class HomeworkStarter {
 
         System.out.println(sbHarryPotter1.equals(indianaJones));
 
+
+        User kamil = new User(3,"Kamil", "Bednarek");
+
+        kamil.addBook(indianaJones);
+        kamil.addBook(sbHobbit);
+
+        kamil.printBorrowedBooks();
+        kamil.returnBook(indianaJones);
+
+        System.out.println();
+        kamil.printBorrowedBooks();
+
+        System.out.println();
+        kamil.returnAllBooks();
+        kamil.addBook(sbHarryPotter1);
+        kamil.printBorrowedBooks();
     }
 }
