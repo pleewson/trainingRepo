@@ -6,8 +6,11 @@ public class Book {
     private Author author;
     private Author[] additionalAuthors;
 
+    private int popularity = 0;
 
 
+
+//constructors
     Book(int id, String title){
         this.id = id;
         this.title = title;
@@ -53,6 +56,8 @@ public class Book {
     }
 
 
+    //getters
+
     public int getId(){
         return id;
     }
@@ -71,6 +76,24 @@ public class Book {
 
     public Author[] getAdditionalAuthors(){
         return additionalAuthors;
+    }
+
+    public int getPopularity(){return popularity; }
+
+
+
+    //methods
+
+    public void borrowBook(){
+        popularity++;
+    }
+
+    public boolean equals(Book book){
+        if(this.id == book.getId()){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
 

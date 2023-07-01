@@ -6,15 +6,24 @@ public class HomeworkStarter {
         Author JKRowling = new Author(2, "Joanne Kathleen", "Rowling", "J.K Rowling");
 
 
-        Book indianaJones = new Book(1, "Indiana Jones dances with monkeys", tatianaLesterno);
+
+
+        Book indianaJones = new Book(2, "Indiana Jones dances with monkeys", tatianaLesterno);
 
         System.out.println(indianaJones.getAuthor());
 
         SoundBook sbHarryPotter1 = new SoundBook(2, "Harry Potter and the philisopher's stone", JKRowling, 6.48, 7);
+        SoundBook sbHobbit = new SoundBook(3, "Hobbit", tatianaLesterno, 3.23, 3);
 
+        sbHarryPotter1.borrowBook();
+        sbHarryPotter1.borrowBook();
+        sbHarryPotter1.borrowBook();
+        sbHarryPotter1.borrowBook();
 
-        System.out.println(sbHarryPotter1.getDuration() + "h");
+        System.out.println("borrowed copies: " + sbHarryPotter1.getPopularity());
+        System.out.println("borrowed copies: " + sbHobbit.getPopularity());
 
+        System.out.println(sbHarryPotter1.equals(indianaJones));
 
     }
 }
